@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>VIP-ANKIT - BYPASSED</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Sora:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&family=Orbitron:wght@400;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/@lottiefiles/tgs-player@1.4.4/dist/tgs-player.js"></script>
+    <style>
+        /* ===== ORIGINAL STYLES ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; text-transform: uppercase; }
+        :root { --bg: #060b18; --bg2: #0a1025; --card: #0d1528; --card2: #111c35; --line: #1a2d52; --line2: #243b6a; --txt: #e0e8ff; --txt2: #8a9cc8; --txt3: #5a6d99; --cyan: #22c55e; --pink: #e11d74; --violet: #7c3aed; --gold: #f0c040; --green: #10b981; --red: #ef4444; --orange: #f59e0b; --neon: #22c55e; --neon2: #ef4444; --accent: #16a34a; --grad: linear-gradient(135deg, #16a34a, #22c55e, #ef4444); --grad2: linear-gradient(135deg, #15803d, #22c55e, #ef4444); --grad3: linear-gradient(135deg, #14532d, #16a34a, #dc2626); --mono: 'JetBrains Mono', monospace; --ui: 'Sora', sans-serif; --deco: 'Cinzel Decorative', cursive; --orbit: 'Orbitron', sans-serif; --raj: 'Rajdhani', sans-serif; }
+        html, body { height: 100%; background: var(--bg); color: var(--txt); font-family: var(--ui); overflow: hidden; font-size: 14px; }
+        body { background: radial-gradient(900px 700px at 10% -10%, rgba(0, 150, 255, .10), transparent 60%), radial-gradient(900px 700px at 100% 0%, rgba(0, 200, 255, .08), transparent 60%), radial-gradient(700px 600px at 50% 110%, rgba(0, 100, 255, .10), transparent 60%), var(--bg); }
+        .tg { display: inline-block; width: 1.25em; height: 1.25em; vertical-align: -.25em; object-fit: contain; }
+        .result-fs { position: fixed; inset: 0; z-index: 950; display: none; align-items: center; justify-content: center; background: rgba(5, 10, 30, .65); backdrop-filter: blur(12px); }
+        .result-fs.show { display: flex; animation: fsIn .3s ease-out; }
+        @keyframes fsIn { from { opacity: 0; } to { opacity: 1; } }
+        .result-fs .rc { background: #0d1528; border-radius: 28px; padding: 32px 26px; text-align: center; width: 88%; max-width: 340px; box-shadow: 0 40px 100px rgba(0, 0, 0, .4), 0 0 60px rgba(0, 150, 255, .2); position: relative; overflow: hidden; border: 1px solid #1a3a60; }
+        .result-fs .rc .glow { position: absolute; inset: -40%; background: radial-gradient(circle, var(--_c, #10b981), transparent 60%); opacity: .14; animation: fsGlow 2s ease-in-out infinite; }
+        @keyframes fsGlow { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+        .result-fs .rc .em { position: relative; z-index: 2; width: 140px; height: 140px; margin: 0 auto; animation: fsBounce .6s cubic-bezier(.34, 1.56, .64, 1); }
+        @keyframes fsBounce { 0% { transform: scale(0) rotate(-30deg); } 100% { transform: scale(1) rotate(0); } }
+        .result-fs .rc h2 { position: relative; z-index: 2; font-size: 36px; font-weight: 900; letter-spacing: 4px; margin-top: 10px; background: var(--_g, linear-gradient(90deg, #10b981, #059669)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .result-fs .rc .rs { position: relative; z-index: 2; font-family: var(--mono); font-size: 12px; color: var(--txt2); margin-top: 6px; letter-spacing: 2px; }
+        .result-fs .rc .rn { position: relative; z-index: 2; margin-top: 14px; font-size: 52px; font-weight: 900; color: var(--_c, #10b981); font-family: var(--mono); line-height: 1; }
+        .result-fs .rc .rl { position: relative; z-index: 2; font-size: 10px; color: var(--txt2); letter-spacing: 3px; margin-top: 2px; }
+        .app { position: fixed; inset: 0; display: flex; flex-direction: column; }
+        .screen { position: absolute; inset: 0; display: none; flex-direction: column; overflow: hidden; }
+        .screen.active { display: flex; }
+        .splash { align-items: center; justify-content: center; text-align: center; padding: 24px; background: var(--bg); }
+        .logo { width: 100px; height: 100px; border-radius: 50%; background: radial-gradient(circle at 20% 20%, #3399ff, #0044cc); display: grid; place-items: center; box-shadow: 0 20px 60px rgba(0, 130, 255, .5); animation: logoGlow 2s infinite; margin: 0 auto; overflow: hidden; border: 3px solid rgba(0, 150, 255, .6); }
+        .logo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+        @keyframes logoGlow { 0%, 100% { box-shadow: 0 30px 90px rgba(0, 140, 255, .6); transform: scale(1); } 50% { box-shadow: 0 40px 120px rgba(0, 170, 255, .8); transform: scale(1.03); } }
+        .splash h1 { font-weight: 900; font-size: 28px; letter-spacing: 6px; margin-top: 20px; font-family: var(--deco); background: linear-gradient(135deg, #22c55e, #16a34a, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 40px rgba(0, 180, 255, .3); }
+        .splash .sub { font-family: var(--mono); font-size: 10px; color: #86efac; margin-top: 6px; letter-spacing: 4px; }
+        .loader { margin: 28px auto 0; width: 180px; height: 4px; background: var(--card); border-radius: 4px; overflow: hidden; }
+        .loader i { display: block; width: 40%; height: 100%; background: linear-gradient(90deg, #16a34a, #22c55e, #ef4444); border-radius: 4px; animation: slide 1.2s infinite; }
+        @keyframes slide { 0% { transform: translateX(-100%); } 100% { transform: translateX(350%); } }
+        .sp-orbit { position: relative; width: 160px; height: 160px; margin: 0 auto; display: grid; place-items: center; }
+        .sp-ring { position: absolute; border-radius: 50%; border: 1.5px dashed rgba(0, 160, 255, .4); }
+        .sp-ring.r1 { inset: 0; animation: spSpin 8s linear infinite; }
+        .sp-ring.r2 { inset: 14px; border-color: rgba(0, 180, 255, .35); animation: spSpin 6s linear infinite reverse; }
+        .sp-ring.r3 { inset: 28px; border-color: rgba(0, 200, 255, .3); animation: spSpin 10s linear infinite; }
+        @keyframes spSpin { to { transform: rotate(360deg); } }
+        .sp-spark { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: linear-gradient(135deg, #22c55e, #ef4444); box-shadow: 0 0 14px rgba(0, 180, 255, .7); }
+        .sp-spark.s1 { top: -4px; left: 50%; animation: spOrbit 3.6s linear infinite; }
+        .sp-spark.s2 { right: -4px; top: 50%; animation: spOrbit 3.6s linear infinite -.9s; }
+        .sp-spark.s3 { bottom: -4px; left: 50%; animation: spOrbit 3.6s linear infinite -1.8s; }
+        .sp-spark.s4 { left: -4px; top: 50%; animation: spOrbit 3.6s linear infinite -2.7s; }
+        @keyframes spOrbit { from { transform: rotate(0) translateY(-80px) rotate(0); } to { transform: rotate(360deg) translateY(-80px) rotate(-360deg); } }
+        .sp-badges { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; margin-top: 14px; }
+        .sp-badges span { font-size: 9px; font-weight: 800; letter-spacing: 2px; padding: 6px 12px; border-radius: 999px; background: linear-gradient(180deg, #111c35, #0d1528); border: 1px solid var(--line2); color: var(--txt); box-shadow: 0 6px 18px rgba(0, 120, 255, .12); }
+        .sp-badges i { background: linear-gradient(135deg, #22c55e, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-right: 4px; }
+        .sp-get { margin-top: 18px; min-width: 200px; }
+        .intro { align-items: center; justify-content: center; padding: 20px; text-align: center; background: var(--bg); }
+        .intro-inner { max-width: 360px; width: 100%; display: flex; flex-direction: column; gap: 16px; animation: fadeUp .6s ease-out; }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .intro-hero { width: 120px; height: 120px; border-radius: 36px; background: linear-gradient(180deg, #111c35, #0d1528); border: 1px solid var(--line2); display: grid; place-items: center; margin: 0 auto; box-shadow: 0 20px 60px rgba(0, 120, 255, .2); }
+        .intro-hero .tg { width: 80px !important; height: 80px !important; }
+        .intro h2 { font-size: 22px; font-weight: 900; letter-spacing: 3px; font-family: var(--deco); background: linear-gradient(135deg, #22c55e, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .intro p { color: var(--txt2); font-size: 12px; line-height: 1.6; padding: 0 8px; }
+        .intro-features { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
+        .feat { background: linear-gradient(180deg, var(--card), var(--card2)); border: 1px solid var(--line2); border-radius: 14px; padding: 12px 8px; text-align: center; }
+        .feat i { font-size: 20px; background: linear-gradient(135deg, #22c55e, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .feat .ft { font-size: 10px; font-weight: 800; margin-top: 4px; letter-spacing: 1px; }
+        .feat .fs { font-size: 8px; color: var(--txt2); margin-top: 2px; font-family: var(--mono); }
+        .get-btn { margin-top: 10px; padding: 14px; border: none; border-radius: 14px; background: var(--grad2); color: #fff; font-weight: 900; font-size: 12px; letter-spacing: 3px; cursor: pointer; box-shadow: 0 20px 50px rgba(0, 100, 255, .45); font-family: var(--ui); transition: all .25s; }
+        .get-btn:active { transform: scale(.97); }
+        .get-btn.sub-btn { background: linear-gradient(135deg, #0d1528, #1a2d52); border: 2px solid #22c55e; color: #22c55e; box-shadow: 0 10px 40px rgba(0, 160, 255, .3), inset 0 0 30px rgba(0, 180, 255, .08); letter-spacing: 3px; font-family: var(--orbit); }
+        .btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+        .btn-row .get-btn { flex: 1; min-width: 140px; }
+        .step-dots { display: flex; justify-content: center; gap: 5px; margin-top: 2px; }
+        .step-dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line2); display: block; }
+        .step-dots i.on { background: linear-gradient(135deg, #22c55e, #ef4444); width: 18px; border-radius: 4px; }
+        .status-wrap { width: 100%; max-width: 380px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; animation: fadeUp .6s; }
+        .status-hero { text-align: center; margin-bottom: 4px; }
+        .status-hero .pulse-ring { width: 80px; height: 80px; border-radius: 50%; background: radial-gradient(circle, rgba(0, 200, 255, .4), transparent 65%); display: grid; place-items: center; margin: 0 auto; position: relative; }
+        .status-hero .pulse-ring::before, .status-hero .pulse-ring::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid rgba(0, 200, 255, .55); animation: pulseRing 2s infinite; }
+        .status-hero .pulse-ring::after { animation-delay: 1s; }
+        @keyframes pulseRing { 0% { transform: scale(.6); opacity: 1; } 100% { transform: scale(1.6); opacity: 0; } }
+        .status-hero .dot-live { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #22c55e, #22c55e); display: grid; place-items: center; font-size: 20px; color: #020810; box-shadow: 0 0 40px rgba(0, 200, 255, .7); }
+        .status-hero h2 { margin-top: 10px; font-size: 20px; font-weight: 900; letter-spacing: 3px; background: linear-gradient(90deg, #22c55e, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .status-hero .st-sub { font-family: var(--mono); font-size: 9px; color: var(--txt2); letter-spacing: 3px; margin-top: 2px; }
+        .level { display: flex; align-items: center; gap: 10px; background: linear-gradient(180deg, var(--card), var(--card2)); border: 1px solid var(--line2); border-radius: 12px; padding: 10px 12px; }
+        .level .lv-badge { width: 32px; height: 32px; border-radius: 8px; background: var(--grad); display: grid; place-items: center; font-weight: 900; color: #fff; font-size: 12px; flex-shrink: 0; }
+        .level .lv-mid { flex: 1; min-width: 0; }
+        .level .lv-name { font-size: 11px; font-weight: 800; letter-spacing: 1px; }
+        .level .lv-bar { height: 4px; background: rgba(255, 255, 255, .06); border-radius: 4px; margin-top: 4px; overflow: hidden; }
+        .level .lv-bar i { display: block; height: 100%; background: linear-gradient(90deg, #22c55e, #22c55e); border-radius: 4px; animation: fillBar 1.4s ease-out forwards; width: 0; }
+        @keyframes fillBar { to { width: var(--w, 100%); } }
+        .level .lv-ok { color: #22c55e; font-size: 16px; flex-shrink: 0; }
+        .auth { align-items: center; justify-content: center; padding: 20px; background: var(--bg); }
+        .auth-card { width: 100%; max-width: 400px; background: linear-gradient(180deg, var(--card), var(--card2)); border: 1px solid var(--line2); border-radius: 32px; padding: 32px 24px; box-shadow: 0 35px 90px rgba(0, 0, 0, .5), 0 0 40px rgba(0, 120, 255, .15); animation: fadeUp .5s; }
+        .auth-logo { width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 12px; border: 3px solid #16a34a; box-shadow: 0 8px 28px rgba(0, 130, 255, .45); }
+        .auth-logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .auth-card h2 { text-align: center; font-weight: 900; font-size: 22px; letter-spacing: 4px; font-family: var(--deco); color: #22c55e; }
+        .auth-sub { text-align: center; color: var(--txt2); font-size: 10px; margin: 2px 0 14px; letter-spacing: 2px; }
+        .auth-actions { display: flex; gap: 10px; margin-top: 4px; }
+        .auth-actions .btn { flex: 1; padding: 12px; border: none; border-radius: 12px; font-family: var(--ui); font-weight: 800; font-size: 11px; letter-spacing: 2px; cursor: pointer; background: var(--grad); color: #fff; transition: all .2s; }
+        .auth-actions .btn:active { transform: scale(.97); }
+        .auth-actions .btn.ghost { background: rgba(10, 20, 40, .8); color: var(--txt); border: 1px solid var(--line2); }
+        .msg { text-align: center; font-size: 10px; color: var(--gold); margin-top: 10px; min-height: 14px; font-family: var(--mono); }
+        .msg.error { color: var(--red); }
+        .msg.success { color: var(--green); }
+        .auth-footer { display: flex; gap: 12px; justify-content: center; margin-top: 14px; flex-wrap: wrap; }
+        .auth-footer a { display: flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 10px; text-decoration: none; font-weight: 800; font-size: 9px; letter-spacing: 1.5px; transition: all .2s; }
+        .auth-footer .contact { background: rgba(0, 130, 255, .15); border: 1px solid rgba(0, 160, 255, .45); color: #22c55e; }
+        .auth-footer .support { background: rgba(0, 200, 180, .12); border: 1px solid rgba(0, 200, 180, .4); color: #0dd8b8; }
+        .congrats { align-items: center; justify-content: center; padding: 16px; text-align: center; background: radial-gradient(circle at 50% 40%, rgba(0, 150, 255, .25), transparent 60%), var(--bg); }
+        .congrats-inner { max-width: 280px; margin: 0 auto; animation: pop .5s cubic-bezier(.34, 1.56, .64, 1); }
+        @keyframes pop { 0% { opacity: 0; transform: scale(.3); } 100% { opacity: 1; transform: scale(1); } }
+        .cg-check { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #10b981, #059669); display: grid; place-items: center; margin: 0 auto 8px; color: #fff; font-size: 22px; box-shadow: 0 8px 20px rgba(16, 185, 129, .4); animation: cgRing 1.2s ease-out infinite; }
+        @keyframes cgRing { 0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, .5), 0 8px 20px rgba(16, 185, 129, .4); } 70% { box-shadow: 0 0 0 16px rgba(16, 185, 129, 0), 0 8px 20px rgba(16, 185, 129, .4); } 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0), 0 8px 20px rgba(16, 185, 129, .4); } }
+        .trophy { font-size: 48px; animation: bounce 1.5s infinite; filter: drop-shadow(0 12px 24px rgba(0, 200, 255, .5)); }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .congrats h1 { font-size: 20px; font-weight: 900; letter-spacing: 3px; margin-top: 6px; background: linear-gradient(90deg, #22c55e, #0088ff, #16a34a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .congrats p { color: var(--txt2); font-size: 11px; margin-top: 4px; letter-spacing: 1px; }
+        .confetti { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 5; }
+        .conf-p { position: absolute; width: 6px; height: 12px; top: -20px; animation: fall linear forwards; }
+        @keyframes fall { to { transform: translateY(110vh) rotate(720deg); opacity: 0; } }
+        .topbar { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: linear-gradient(135deg, #060e20, #0a1528); border-bottom: 1px solid #1a3050; flex-shrink: 0; }
+        .brand { display: flex; align-items: center; gap: 8px; }
+        .b-logo { width: 36px; height: 36px; border-radius: 50%; overflow: hidden; border: 2px solid #16a34a; box-shadow: 0 0 20px rgba(0, 130, 255, .45); flex-shrink: 0; }
+        .b-logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .b-name { font-weight: 900; font-size: 12px; letter-spacing: 2px; font-family: var(--deco); color: #dcfce7; }
+        .status { display: flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 8px; color: #b7f7c5; padding: 4px 10px; background: rgba(0, 120, 255, .2); border: 1px solid rgba(0, 150, 255, .4); border-radius: 20px; }
+        .pulse-dot { width: 5px; height: 5px; background: #22c55e; border-radius: 50%; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(0, 200, 255, .6); } 50% { box-shadow: 0 0 0 6px rgba(0, 200, 255, 0); } }
+        .tabs { display: flex; background: #060e20; border-bottom: 1px solid #1a3050; flex-shrink: 0; padding: 0 4px; }
+        .tab { flex: 1; padding: 10px 2px; text-align: center; font-size: 9px; color: #6688aa; cursor: pointer; font-weight: 800; letter-spacing: 1px; border-bottom: 2px solid transparent; transition: all .2s; font-family: var(--deco); }
+        .tab i { display: block; font-size: 14px; margin-bottom: 2px; }
+        .tab.active { color: #22c55e; border-bottom-color: #16a34a; }
+        .body { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 12px; scrollbar-width: thin; background: var(--bg); }
+        .page { display: none; flex-direction: column; gap: 10px; }
+        .page.active { display: flex; }
+        .mode { display: flex; gap: 3px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 3px; flex-wrap: wrap; }
+        .mode-btn { flex: 1; padding: 8px 4px; background: transparent; color: var(--txt2); font-weight: 800; font-size: 9px; border: none; border-radius: 8px; cursor: pointer; font-family: var(--ui); letter-spacing: 1px; min-width: 40px; }
+        .mode-btn.active { background: var(--grad2); color: #fff; }
+        .v2-hero { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; background: linear-gradient(135deg, #060e20, #0a1528); border-radius: 18px; padding: 14px 16px; color: #fff; box-shadow: 0 20px 44px -20px rgba(0, 100, 255, .55); position: relative; overflow: hidden; margin-top: 8px; border: 1px solid #1a3050; }
+        .v2-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(150px 100px at 12% 30%, rgba(0, 150, 255, .4), transparent 60%), radial-gradient(150px 100px at 88% 70%, rgba(0, 200, 255, .25), transparent 60%); pointer-events: none; }
+        .v2-l { font-family: var(--mono); font-size: 8px; letter-spacing: 3px; color: #b7f7c5; font-weight: 800; }
+        .v2-pv { font-family: var(--mono); font-size: 20px; font-weight: 900; letter-spacing: 1px; margin-top: 2px; text-shadow: 0 2px 12px rgba(0, 0, 0, .4); }
+        .v2-live { margin-top: 6px; font-family: var(--mono); font-size: 8px; color: #b7f7c5; letter-spacing: 2px; display: flex; align-items: center; gap: 4px; }
+        .v2-live-dot { width: 6px; height: 6px; border-radius: 999px; background: #22c55e; box-shadow: 0 0 0 4px rgba(0, 200, 255, .3); animation: v2pulse 1.4s infinite; }
+        @keyframes v2pulse { 50% { box-shadow: 0 0 0 8px rgba(0, 200, 255, .08); } }
+        .v2-ring { position: relative; width: 80px; height: 80px; flex-shrink: 0; }
+        .v2-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+        .v2-ring-bg { fill: none; stroke: rgba(255, 255, 255, .12); stroke-width: 7; }
+        .v2-ring-fg { fill: none; stroke: url(#v2grad); stroke-width: 7; stroke-linecap: round; stroke-dasharray: 1000; stroke-dashoffset: 0; transition: stroke-dashoffset .4s linear; stroke: #22c55e; filter: drop-shadow(0 0 6px rgba(0, 200, 255, .5)); }
+        .v2-ring-val { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 16px; font-weight: 900; background: linear-gradient(90deg, #22c55e, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .v2-ring-l { position: absolute; left: 0; right: 0; bottom: -12px; text-align: center; font-family: var(--mono); font-size: 6px; letter-spacing: 2px; color: #b7f7c5; }
+        .v2-verdict { margin-top: 12px; background: linear-gradient(180deg, #0d1528, #111c35); border: 1.5px solid #1a3a60; border-radius: 20px; padding: 14px; box-shadow: 0 20px 50px -20px rgba(0, 100, 255, .3); position: relative; overflow: hidden; transition: all .3s; }
+        .v2-verdict::before { content: ""; position: absolute; top: 0; left: 12%; right: 12%; height: 3px; background: linear-gradient(90deg, transparent, #16a34a, #22c55e, #ef4444, transparent); border-radius: 0 0 8px 8px; }
+        .v2-verdict.big { border-color: #3b82f6; background: linear-gradient(180deg, #0a1528, #0d1a35); }
+        .v2-verdict.small { border-color: #fca5a5; background: linear-gradient(180deg, #0d1528, #111c35); }
+        .v2-verdict.green { border-color: #6ee7b7; background: linear-gradient(180deg, #0a1528, #0d1a35); }
+        .v2-verdict.red { border-color: #fca5a5; background: linear-gradient(180deg, #0d1528, #111c35); }
+        .v2-track-row { display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 10px; }
+        .v2-track { padding: 5px 12px; border-radius: 999px; font-weight: 900; font-size: 9px; letter-spacing: 2px; color: #fff; box-shadow: 0 8px 18px -6px rgba(0, 20, 40, .4); }
+        .v2-track-bs { background: linear-gradient(90deg, #16a34a, #ef4444); }
+        .v2-track-rg { background: linear-gradient(90deg, #16a34a, #ef4444); }
+        .v2-model { font-family: var(--mono); font-size: 8px; font-weight: 800; letter-spacing: 2px; color: #22c55e; background: #0a1a30; border: 1px solid #1a3a60; padding: 4px 8px; border-radius: 6px; }
+        .v2-verdict-body { display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px; }
+        .v2-pick-wrap, .v2-target { background: linear-gradient(180deg, #0d1a35, #0a1528); border: 1px solid #1a3a60; border-radius: 14px; padding: 10px 8px; text-align: center; }
+        .v2-pl { font-size: 7px; color: #86a98f; letter-spacing: 2px; font-weight: 800; }
+        .v2-pick { margin-top: 6px; padding: 10px 4px; border-radius: 12px; font-size: 26px; font-weight: 900; letter-spacing: 2px; color: #fff; background: #1a2d52; }
+        .v2-pick.big { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+        .v2-pick.small { background: linear-gradient(135deg, #ef4444, #991b1b); }
+        .v2-pick.green { background: linear-gradient(135deg, #22c55e, #15803d); }
+        .v2-pick.red { background: linear-gradient(135deg, #ef4444, #991b1b); }
+        .v2-pick.idle { background: #1a2d52; color: #5a6d99; }
+        .num-ball { display: inline-block; width: 56px; height: 56px; background-size: contain; background-repeat: no-repeat; background-position: center; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; }
+        .v2-target-n { margin-top: 6px; display: flex; justify-content: center; align-items: center; min-height: 64px; }
+        .v2-target-n .num-ball { width: 64px; height: 64px; }
+        .v2-conf-head { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 9px; font-weight: 800; letter-spacing: 2px; color: #8a9cc8; }
+        .v2-conf-head b { font-family: var(--mono); font-size: 14px; background: linear-gradient(90deg, #22c55e, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .v2-conf-bar { height: 8px; background: #1a2d52; border-radius: 999px; overflow: hidden; margin-top: 4px; position: relative; }
+        .v2-conf-fill { height: 100%; background: linear-gradient(90deg, #16a34a, #22c55e, #ef4444); border-radius: 999px; transition: width .6s; box-shadow: 0 0 12px rgba(0, 160, 255, .4); }
+        .v2-status { margin-top: 10px; padding: 8px 10px; border-radius: 10px; background: #0d1a35; color: #bbf7d0; font-weight: 800; font-size: 9px; letter-spacing: 1px; text-align: center; border: 1px solid #1a3a60; font-family: var(--mono); transition: all .35s; }
+        .v2-status.warn { background: #1a1a0d; color: #f59e0b; border-color: #fcd34d; }
+        .v2-status.good { background: linear-gradient(135deg, #0a1a15, #0d251d); border: 1px solid #10b981; color: #10b981; box-shadow: 0 12px 30px -8px rgba(16, 185, 129, .45), inset 0 1px 0 rgba(255, 255, 255, .1); animation: v2GoodPulse 2.4s ease-in-out infinite; }
+        @keyframes v2GoodPulse { 0%, 100% { box-shadow: 0 12px 30px -8px rgba(16, 185, 129, .45), inset 0 1px 0 rgba(255, 255, 255, .1); } 50% { box-shadow: 0 18px 42px -6px rgba(16, 185, 129, .65), inset 0 1px 0 rgba(255, 255, 255, .1); } }
+        .override-row { display: flex; gap: 6px; margin-top: 10px; }
+        .override-row .btn-override { flex: 1; padding: 10px 6px; border: none; border-radius: 10px; font-family: var(--ui); font-weight: 800; font-size: 10px; letter-spacing: 1.5px; cursor: pointer; transition: all .2s; color: #fff; }
+        .override-row .btn-override.active { box-shadow: 0 0 0 3px #fff, 0 0 0 5px #16a34a; }
+        .btn-original { background: linear-gradient(135deg, #16a34a, #ef4444); }
+        .btn-opposite { background: linear-gradient(135deg, #ef4444, #991b1b); }
+        .v2-rack { margin-top: 12px; background: linear-gradient(135deg, #060e20, #0a1528); border: none; border-radius: 18px; padding: 12px; box-shadow: 0 20px 44px -20px rgba(0, 100, 255, .55); color:#fff; }
+        .v2-rack-head { display: flex; justify-content: space-between; align-items: center; font-size: 9px; font-weight: 900; letter-spacing: 2px; margin-bottom: 8px; }
+        .v2-rack-head span { background: linear-gradient(90deg, #22c55e, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .v2-rack-sub { font-family: var(--mono); font-size: 8px; color: #b7f7c5 !important; -webkit-text-fill-color: #b7f7c5 !important; letter-spacing: 1.5px; }
+        .v2-pods { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+        .v2-pod { background: #0d1a35; border: 1.5px solid #1a3a60; border-radius: 12px; padding: 8px 8px; text-align: center; transition: transform .25s, box-shadow .25s, border-color .25s; position: relative; overflow: hidden; }
+        .v2-pod.active { transform: translateY(-2px) scale(1.02); border-color: #16a34a; box-shadow: 0 14px 30px -10px rgba(0, 130, 255, .5), inset 0 1px 0 rgba(255, 255, 255, .08); background: linear-gradient(180deg, #0d1a35, #0d1528); }
+        .v2-pod-n { font-family: var(--mono); font-size: 7px; letter-spacing: 1.2px; color: #86a98f; font-weight: 800; }
+        .v2-pod-v { margin-top: 4px; font-size: 13px; font-weight: 900; color: #8a9cc8; letter-spacing: 1px; transition: color .2s; }
+        .v2-pod-s { margin-top: 2px; font-family: var(--mono); font-size: 8px; color: #5a6d99; letter-spacing: 1px; }
+        .v2-tracks { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px; }
+        .v2-trk { background: #0d1a35; border: 1.5px solid #1a3a60; border-radius: 10px; padding: 6px 8px; display: flex; flex-direction: column; gap: 2px; transition: all .3s cubic-bezier(.34, 1.56, .64, 1); position: relative;}
+        .v2-trk.winner { background: linear-gradient(135deg, #1a1a0d, #252010); border: 1.5px solid #f59e0b; box-shadow: 0 16px 36px -10px rgba(245, 158, 11, .5), inset 0 1px 0 rgba(255, 255, 255, .1); transform: translateY(-1px); }
+        .v2-trk-l { font-family: var(--mono); font-size: 7px; letter-spacing: 2px; color: #86a98f; font-weight: 800; }
+        .v2-trk-v { font-size: 12px; font-weight: 900; letter-spacing: 1px; color: #8a9cc8; transition: color .2s;}
+        .v2-trk-c { font-family: var(--mono); font-size: 7px; color: #5a6d99; letter-spacing: 1px; }
+        .quick { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+        .qstat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 4px; text-align: center; }
+        .qstat .v { font-weight: 900; font-size: 14px; }
+        .qstat .v.g { color: var(--green); } .qstat .v.r { color: var(--red); } .qstat .v.b { color: var(--cyan); } .qstat .v.p { color: var(--gold); }
+        .qstat .l { font-size: 7px; color: var(--txt2); letter-spacing: 1px; margin-top: 2px; font-weight: 800; }
+        .section { background: #0d1528 !important; border: 1px solid var(--line) !important; border-radius: 14px; padding: 12px; box-shadow: 0 4px 14px rgba(0, 0, 0, .15); }
+        .sec-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 9px; font-weight: 800; letter-spacing: 1px; }
+        .sec-sub { font-family: var(--mono); font-size: 8px; color: var(--txt2); }
+        .tape { display: flex; gap: 3px; overflow-x: auto; scrollbar-width: none; padding: 2px 0; }
+        .tape::-webkit-scrollbar { display: none; }
+        .tcell { flex-shrink: 0; width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; font-weight: 800; font-size: 11px; background: #0a1025 !important; border: 1px solid var(--line) !important; }
+        .tcell .num-ball { width: 24px; height: 24px; }
+        .tcell.big { color: #3b82f6 !important; } .tcell.small { color: #ef4444 !important; }
+        .hrow { display: grid; grid-template-columns: 1fr auto auto auto; gap: 6px; align-items: center; padding: 8px 10px; background: #0d1528 !important; border: 1px solid var(--line) !important; border-radius: 8px; margin-bottom: 4px; font-size: 10px; }
+        .hp { font-family: var(--mono); font-size: 8px; color: var(--txt2); line-height: 1.3; }
+        .hpred { font-weight: 800; font-size: 10px; }
+        .hpred.big { color: var(--green); } .hpred.small { color: var(--red); } .hpred.green { color: #00e676; } .hpred.red { color: #ff1744; }
+        .hact { font-weight: 900; font-size: 14px; color: var(--gold); text-align: center; }
+        .hact .num-ball { width: 28px; height: 28px; display: inline-block; }
+        .hres { font-size: 8px; font-weight: 800; padding: 2px 6px; border-radius: 4px; }
+        .hres.win { color: var(--green); background: rgba(0, 255, 163, .12); } .hres.loss { color: var(--red); background: rgba(255, 61, 90, .12); } .hres.jackpot { color: var(--gold); background: rgba(255, 209, 102, .18); }
+        .games-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 10px !important; margin-top: 10px; }
+        @media(min-width:420px) { .games-grid { grid-template-columns: 1fr 1fr 1fr !important; } }
+        .game { background: #0d1528 !important; border: 1px solid #1a2d52 !important; border-radius: 16px !important; padding: 10px 8px 8px !important; cursor: pointer; text-align: center; transition: transform .2s, box-shadow .2s, border-color .2s; position: relative; overflow: hidden; box-shadow: 0 8px 20px -12px rgba(0, 0, 0, .3); }
+        .game:hover { transform: translateY(-2px); box-shadow: 0 18px 34px -14px rgba(0, 120, 255, .35); }
+        .game:active { transform: scale(.96); }
+        .game .g-tag { position: absolute; top: 6px; right: 6px; font-family: var(--mono); font-size: 7px; font-weight: 900; letter-spacing: 1.5px; color: #fff; background: linear-gradient(135deg, #16a34a, #ef4444); padding: 2px 6px; border-radius: 999px; z-index: 3; box-shadow: 0 4px 10px -4px rgba(0, 100, 255, .6); }
+        .game .g-thumb { position: relative; width: 100%; aspect-ratio: 1/1; border-radius: 12px; overflow: hidden; display: grid; place-items: center; margin-bottom: 6px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .15), 0 8px 18px -8px rgba(0, 0, 0, .4); }
+        .game .g-initials { position: absolute; font-family: var(--mono); font-weight: 900; font-size: 22px; color: #fff; letter-spacing: 1px; text-shadow: 0 2px 12px rgba(0, 0, 0, .35); }
+        .game .g-thumb img { position: relative; z-index: 2; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
+        .game .g-thumb img.ok { opacity: 1; }
+        .game .gname { font-weight: 900 !important; font-size: 10px !important; color: #dcfce7; letter-spacing: .5px; margin-top: 2px; }
+        .game .glaunch { display: inline-flex !important; align-items: center; gap: 4px; margin-top: 4px !important; font-family: var(--mono); font-size: 8px !important; font-weight: 800; letter-spacing: 2px; color: #fff !important; background: linear-gradient(135deg, #16a34a, #ef4444) !important; padding: 4px 8px; border-radius: 999px; box-shadow: 0 6px 14px -6px rgba(0, 100, 255, .6); }
+        .modal-bg { position: fixed; inset: 0; background: rgba(5, 10, 30, .65) !important; backdrop-filter: blur(14px); z-index: 500; display: none; align-items: center; justify-content: center; padding: 16px; }
+        .modal-bg.show { display: flex; }
+        .modal { width: 100%; max-width: 300px; background: linear-gradient(180deg, #0d1528, #111c35) !important; border: 1px solid #1a3a60 !important; border-radius: 20px !important; padding: 20px 16px !important; text-align: center; box-shadow: 0 40px 100px rgba(0, 0, 0, .5) !important; }
+        .gv { position: fixed; inset: 0; z-index: 800; display: none; background: #000; }
+        .gv.show { display: block; }
+        .gv iframe { width: 100%; height: 100%; border: 0; }
+        .gv-exit { position: fixed; top: 12px; left: 12px; z-index: 850; background: var(--red); color: #fff; border: none; border-radius: 999px; padding: 6px 14px; font-weight: 900; font-size: 11px; cursor: pointer; display: none; letter-spacing: 1px; box-shadow: 0 4px 16px rgba(239, 68, 68, .5); }
+        .gv-exit.show { display: inline-flex; align-items: center; gap: 4px; }
+        .inj { position: fixed; width: 200px; background: linear-gradient(145deg, #060e20, #0a1528); border: 2px solid #16a34a; border-radius: 18px; padding: 14px 12px; z-index: 900; box-shadow: 0 24px 60px rgba(0, 120, 255, .5); display: none; touch-action: none; color: #fff; backdrop-filter: blur(6px); cursor: grab; }
+        .inj.show { display: block; animation: injPop .3s cubic-bezier(.34, 1.56, .64, 1); }
+        @keyframes injPop { 0% { transform: scale(.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        .inj-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-family: var(--deco); font-size: 10px; letter-spacing: 2px; color: #b7f7c5; border-bottom: 1px solid #1a3a60; padding-bottom: 6px; cursor: grab; }
+        .inj-head .inj-logo { width: 24px; height: 24px; border-radius: 50%; overflow: hidden; border: 1px solid #16a34a; flex-shrink: 0; margin-right: 4px; }
+        .inj-head .inj-logo img { width: 100%; height: 100%; object-fit: cover; }
+        .inj-head .inj-title { display: flex; align-items: center; gap: 6px; }
+        .inj-head .inj-close { cursor: pointer; color: #66bbff; font-size: 13px; }
+        .inj-body { display: flex; flex-direction: column; gap: 6px; }
+        .inj-row { display: flex; justify-content: space-between; align-items: center; padding: 4px 8px; background: rgba(255, 255, 255, .05); border-radius: 8px; border: 1px solid #1a3a60; }
+        .inj-label { font-family: var(--mono); font-size: 7px; color: #86a98f; letter-spacing: 1.5px; }
+        .inj-value { font-family: var(--mono); font-size: 14px; font-weight: 900; color: #22c55e; }
+        .inj-actions { display: flex; gap: 6px; margin-top: 8px; }
+        .inj-actions button { flex: 1; padding: 6px; border: none; border-radius: 8px; font-family: var(--ui); font-weight: 800; font-size: 9px; cursor: pointer; }
+        .inj-actions .inj-exit { background: #16a34a; color: #fff; }
+        .inj-actions .inj-hide { background: #1a2d52; color: #b7f7c5; border: 1px solid #2a4a70; }
+        .inj-fab { position: fixed; width: 48px; height: 48px; border-radius: 50%; z-index: 899; border: 2px solid #16a34a; overflow: hidden; display: none; }
+        .inj-fab.show { display: block; }
+        .inj-fab img { width: 100%; height: 100%; object-fit: cover; }
+        .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--card2); border: 1px solid var(--orange); color: var(--orange); font-family: var(--mono); font-size: 9px; padding: 8px 16px; border-radius: 8px; z-index: 999; opacity: 0; transition: all .3s; }
+        .toast.show { opacity: 1; transform: translateX(-50%) translateY(-5px); }
+        @media(min-width:520px) { .body { max-width: 480px; margin: 0 auto; width: 100%; } }
+        .result-anim { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; flex-direction: column; background: rgba(5, 8, 20, .96); z-index: 10; border-radius: 20px; }
+        .result-anim.show { display: flex; }
+        .ra-icon { font-size: 60px; animation: bounce 1s infinite; }
+        .ra-txt { font-size: 24px; font-weight: 900; letter-spacing: 4px; margin-top: 6px; }
+        .ra-sub { font-family: var(--mono); font-size: 10px; color: var(--txt2); margin-top: 2px; }
+        #page-games .section { background: linear-gradient(180deg, #0d1528, #111c35) !important; border: 1px solid #1a3a60 !important; border-radius: 18px !important; box-shadow: 0 20px 50px -20px rgba(0, 100, 255, .28) !important; padding: 12px !important; }
+        #page-games .sec-head>span:first-child { background: linear-gradient(90deg, #22c55e, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 11px; font-weight: 900; letter-spacing: 3px; }
+        /* VIP-ANKIT GREEN + RED THEME */
+        :root {
+            --green: #22c55e;
+            --red: #ef4444;
+            --grad: linear-gradient(135deg, #16a34a, #22c55e, #ef4444);
+            --grad2: linear-gradient(135deg, #15803d, #22c55e, #dc2626);
+            --grad3: linear-gradient(135deg, #14532d, #16a34a, #dc2626);
+        }
+        .splash h1, .auth-card h2, .status-hero h2, .congrats h1,
+        .v2-ring-val, .v2-conf-head b, .v2-rack-head span {
+            background: linear-gradient(90deg, #22c55e, #f8fafc, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .loader i, .v2-conf-fill { background: linear-gradient(90deg, #16a34a, #22c55e, #ef4444); }
+        .v2-track-bs, .btn-original { background: linear-gradient(90deg, #15803d, #22c55e); }
+        .v2-track-rg, .btn-opposite { background: linear-gradient(90deg, #b91c1c, #ef4444); }
+        .v2-pick.green { background: linear-gradient(135deg, #22c55e, #15803d); }
+        .v2-pick.red { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+        .auth-footer .contact { background: rgba(34,197,94,.12); border-color: rgba(34,197,94,.45); color: #86efac; }
+    </style>
+</head>
+<body>
+    <div class="app">
+
+        <!-- SPLASH -->
+        <div class="screen splash active" id="screen-splash">
+            <div class="sp-orbit">
+                <span class="sp-ring r1"></span><span class="sp-ring r2"></span><span class="sp-ring r3"></span>
+                <div class="logo"><img src="logo.png" alt="VIP-ANKIT"></div>
+                <span class="sp-spark s1"></span><span class="sp-spark s2"></span><span class="sp-spark s3"></span><span class="sp-spark s4"></span>
+            </div>
+            <h1>VIP-ANKIT</h1>
+            <div class="sub">REAL TIME PREDICTOR</div>
+            <div class="sp-badges"><span><i class="fa-solid fa-shield-halved"></i> SECURE</span><span><i class="fa-solid fa-bolt"></i> LIVE AI</span><span><i class="fa-solid fa-crown"></i> PREMIUM</span></div>
+            <div class="loader"><i></i></div>
+            <div class="btn-row" style="max-width:320px;margin:0 auto;">
+                <button class="get-btn sp-get" onclick="goto('screen-intro')">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- INTRO 1 -->
+        <div class="screen intro" id="screen-intro">
+            <div class="intro-inner">
+                <div class="intro-hero"><img class="tg" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3af/512.gif" alt=""></div>
+                <h2>WELCOME</h2>
+                <p>Advanced AI prediction engine powered by deep learning. Real-time analysis, pattern recognition, and zero-skip confidence.</p>
+                <div class="intro-features">
+                    <div class="feat"><i class="fa-solid fa-bolt"></i><div class="ft">REAL-TIME</div><div class="fs">Live feed sync</div></div>
+                    <div class="feat"><i class="fa-solid fa-brain"></i><div class="ft">DEEP AI</div><div class="fs">Dual track</div></div>
+                    <div class="feat"><i class="fa-solid fa-shield-halved"></i><div class="ft">SAFE MODE</div><div class="fs">Recovery lock</div></div>
+                    <div class="feat"><i class="fa-solid fa-trophy"></i><div class="ft">JACKPOT</div><div class="fs">Exact number</div></div>
+                </div>
+                <div class="btn-row">
+                    <button class="get-btn" onclick="goto('screen-about')">NEXT <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="step-dots"><i class="on"></i><i></i><i></i></div>
+            </div>
+        </div>
+
+        <!-- INTRO 2 -->
+        <div class="screen intro" id="screen-about">
+            <div class="intro-inner">
+                <div class="intro-hero"><img class="tg" src="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.gif" alt=""></div>
+                <h2>HOW IT WORKS</h2>
+                <p>Our engine pulls live results every 2.5 seconds, cross-analyzes dual-track patterns, and locks the highest-confidence signal for the next period.</p>
+                <div class="intro-features">
+                    <div class="feat"><i class="fa-solid fa-chart-line"></i><div class="ft">PATTERN AI</div><div class="fs">2-5 depth scan</div></div>
+                    <div class="feat"><i class="fa-solid fa-rotate"></i><div class="ft">STREAK BREAK</div><div class="fs">Auto detect</div></div>
+                    <div class="feat"><i class="fa-solid fa-lock"></i><div class="ft">NO SKIP</div><div class="fs">Every period</div></div>
+                    <div class="feat"><i class="fa-solid fa-crosshairs"></i><div class="ft">TARGET NUM</div><div class="fs">Weighted pick</div></div>
+                </div>
+                <div class="btn-row">
+                    <button class="get-btn" onclick="goto('screen-status')">NEXT <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="step-dots"><i></i><i class="on"></i><i></i></div>
+            </div>
+        </div>
+
+        <!-- STATUS -->
+        <div class="screen intro" id="screen-status">
+            <div class="status-wrap">
+                <div class="status-hero">
+                    <div class="pulse-ring"><div class="dot-live"><i class="fa-solid fa-signal"></i></div></div>
+                    <h2>HACK IS ACTIVE</h2>
+                    <div class="st-sub">ALL SYSTEMS · ONLINE</div>
+                </div>
+                <div class="level"><div class="lv-badge">FIX</div><div class="lv-mid"><div class="lv-name">System Fix · Applied</div><div class="lv-bar"><i style="--w:100%"></i></div></div><div class="lv-ok"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="level"><div class="lv-badge">HCK</div><div class="lv-mid"><div class="lv-name">Hack Engine · Locked</div><div class="lv-bar"><i style="--w:100%"></i></div></div><div class="lv-ok"><i class="fa-solid fa-circle-check"></i></div></div>
+                <div class="btn-row">
+                    <button class="get-btn" onclick="goto('screen-login')">CONTINUE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGIN -->
+        <div class="screen auth" id="screen-login">
+            <div class="auth-card">
+                <div class="auth-logo"><img src="logo.png" alt="VIP-ANKIT"></div>
+                <h2>VIP-ANKIT</h2>
+                <div class="auth-sub">BYPASSED ACCESS</div>
+                <div style="text-align:center;">
+                    <div style="margin-bottom:12px;">
+                        <input type="Text" id="login-key-input" placeholder="ENTER YOUR KEY " style="background:rgba(0,20,50,.8); border:1px solid #16a34a; border-radius:10px; padding:10px 14px; font-family:var(--mono); font-weight:700; color:#bbf7d0; text-align:center; letter-spacing:2px; font-size:14px; width:100%; max-width:260px; outline:none; caret-color:#22c55e;">
+                    </div>
+                </div>
+                <div class="auth-actions">
+                    <button class="btn ghost" onclick="document.getElementById('login-key-input').value=''">CLEAR</button>
+                    <button class="btn" id="check-btn" onclick="checkAccess()">LOGIN</button>
+                </div>
+                <div class="msg" id="login-msg"></div>
+                <div class="auth-footer">
+                    <a class="contact" href="https://t.me/itx_ankitt0" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-telegram"></i> @itx_ankitt0
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONGRATS -->
+        <div class="screen congrats" id="screen-congrats">
+            <div class="congrats-inner">
+                <div class="cg-check"><i class="fa-solid fa-check"></i></div>
+                <div class="trophy"><img class="tg" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c6/512.gif" alt=""></div>
+                <h1>CONGRATS!</h1>
+                <p>Bypass Successful · Welcome</p>
+            </div>
+        </div>
+
+        <!-- MAIN APP -->
+        <div class="screen" id="screen-main">
+            <div class="topbar">
+                <div class="brand">
+                    <div class="b-logo"><img src="logo.png"></div>
+                    <div class="b-name">VIP-ANKIT</div>
+                </div>
+                <div class="status"><span class="pulse-dot"></span><span>LIVE AI</span></div>
+            </div>
+            <div class="tabs">
+                <div class="tab active" data-tab="predict"><i class="fa-solid fa-shield-halved"></i>PREDICT</div>
+                <div class="tab" data-tab="history"><i class="fa-solid fa-clock-rotate-left"></i>HISTORY</div>
+                <div class="tab" data-tab="games"><i class="fa-solid fa-gamepad"></i>GAMES</div>
+            </div>
+            <div class="body">
+                <div class="page active" id="page-predict">
+                    <div class="mode">
+                        <button class="mode-btn active" data-mode="30s" onclick="setMode('30s')">30 SEC</button>
+                        <button class="mode-btn" data-mode="1m" onclick="setMode('1m')">1 MIN</button>
+                        <button class="mode-btn" data-mode="3m" onclick="setMode('3m')">3 MIN</button>
+                        <button class="mode-btn" data-mode="5m" onclick="setMode('5m')">5 MIN</button>
+                    </div>
+
+                    <div class="v2-hero">
+                        <div class="v2-period-block">
+                            <div class="v2-l">PERIOD</div>
+                            <div class="v2-pv" id="curr-period">—</div>
+                            <div class="v2-live"><span class="v2-live-dot"></span>LIVE FEED · ADAPTIVE ENGINE</div>
+                        </div>
+                        <div class="v2-ring">
+                            <svg viewBox="0 0 120 120"><defs><linearGradient id="v2grad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#16a34a"/><stop offset="50%" stop-color="#22c55e"/><stop offset="100%" stop-color="#22c55e"/></linearGradient></defs><circle cx="60" cy="60" r="52" class="v2-ring-bg"/><circle cx="60" cy="60" r="52" class="v2-ring-fg" id="ring-fg" pathLength="1000"/></svg>
+                            <div class="v2-ring-val" id="timer-val">--:--</div>
+                            <div class="v2-ring-l">SECONDS</div>
+                        </div>
+                    </div>
+
+                    <div class="v2-verdict" id="pred-card">
+                        <div class="v2-track-row">
+                            <span class="v2-track v2-track-bs" id="track-badge">ANALYZING</span>
+                            <span class="v2-model" id="model-badge">INITIALIZING</span>
+                        </div>
+                        <div class="v2-verdict-body">
+                            <div class="v2-pick-wrap"><div class="v2-pl" id="pred-label">PREDICTION</div><div class="v2-pick v2-idle" id="pred-bs">—</div></div>
+                            <div class="v2-target"><div class="v2-pl">TARGET DIGIT</div><div class="v2-target-n" id="pred-num">—</div></div>
+                        </div>
+                        <div class="v2-conf-head"><span>AI CONFIDENCE</span><b id="conf-text">0%</b></div>
+                        <div class="v2-conf-bar"><div class="v2-conf-fill" id="conf-fill"></div></div>
+                        <div class="v2-status" id="safety-status">SYSTEM READY</div>
+
+                        <div class="override-row">
+                            <button class="btn-override btn-original active" id="btn-original" onclick="setOverrideMode('original')">PRIVATE</button>
+                            <button class="btn-override btn-opposite" id="btn-opposite" onclick="setOverrideMode('opposite')">🔄 OPPOSITE</button>
+                        </div>
+
+                        <div class="result-anim" id="result-anim"><div class="ra-icon" id="ra-icon"><img class="tg" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c6/512.gif" alt=""></div><div class="ra-txt" id="ra-txt">WIN</div><div class="ra-sub" id="ra-sub">—</div></div>
+                    </div>
+
+                    <div class="v2-rack">
+                        <div class="v2-rack-head"><span>◆ QUANTUM NEURAL CORE v3</span><span class="v2-rack-sub"> · LIVE</span></div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                            <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:10px;text-align:center">
+                                <div style="font-family:var(--mono);font-size:8px;color:#b7f7c5;letter-spacing:2px;font-weight:800">HIT-RATE</div>
+                                <div id="gm-hitrate" style="margin-top:4px;font-family:var(--mono);font-size:18px;font-weight:900;background:linear-gradient(90deg,#22c55e,#a7f3d0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">—</div>
+                                <div style="margin-top:2px;font-family:var(--mono);font-size:7px;color:#b7f7c5;letter-spacing:1.5px">LAST 10 ROUNDS</div>
+                            </div>
+                            <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:10px;text-align:center">
+                                <div style="font-family:var(--mono);font-size:8px;color:#b7f7c5;letter-spacing:2px;font-weight:800">WIN STREAK</div>
+                                <div id="gm-streak" style="margin-top:4px;font-family:var(--mono);font-size:18px;font-weight:900;background:linear-gradient(90deg,#fbbf24,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent">0</div>
+                                <div style="margin-top:2px;font-family:var(--mono);font-size:7px;color:#b7f7c5;letter-spacing:1.5px">CURRENT RUN</div>
+                            </div>
+                        </div>
+                        <div id="gm-last" style="margin-top:8px;padding:8px;border-radius:8px;background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.15);font-family:var(--mono);font-size:9px;color:#dcfce7;letter-spacing:1px;text-align:center">LAST RESULT · WAITING</div>
+                    </div>
+
+                    <div class="quick">
+                        <div class="qstat"><div class="v g" id="qs-win">0</div><div class="l">WINS</div></div>
+                        <div class="qstat"><div class="v r" id="qs-loss">0</div><div class="l">LOSS</div></div>
+                        <div class="qstat"><div class="v p" id="qs-jack">0</div><div class="l">JACKPOT</div></div>
+                        <div class="qstat"><div class="v b" id="qs-acc">0%</div><div class="l">ACC</div></div>
+                    </div>
+                    <div class="section">
+                        <div class="sec-head"><span>LIVE TAPE</span><span class="sec-sub" id="tape-meta">—</span></div>
+                        <div class="tape" id="live-tape"></div>
+                    </div>
+                </div>
+
+                <div class="page" id="page-history"><div class="section"><div class="sec-head"><span>HISTORY</span><span class="sec-sub" id="hist-stats">—</span></div><div id="hist-list"></div></div></div>
+
+                <div class="page" id="page-games"><div class="section"><div class="sec-head"><span>GAME PORTALS</span></div><div class="games-grid" id="games-grid"></div></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALS -->
+    <div class="modal-bg" id="game-modal"><div class="modal">
+            <img id="gm-img" src="" style="width:44px;height:44px;border-radius:10px;margin-bottom:6px" onerror="this.style.display='none'">
+            <h3 id="gm-name">—</h3>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0;padding:10px;background:rgba(0,20,50,.6);border-radius:10px">
+                <div><div style="font-size:7px;color:var(--txt2)">B/S</div><div id="gm-bs" style="font-size:18px;font-weight:900">—</div></div>
+                <div><div style="font-size:7px;color:var(--txt2)">NUM</div><div id="gm-num" style="font-size:18px;font-weight:900;color:var(--gold)">—</div></div>
+            </div>
+            <button class="btn" onclick="launchGame(true)" style="margin-bottom:4px;padding:10px;font-size:11px;background:var(--grad2);border:none;border-radius:12px;color:#fff;font-weight:800;letter-spacing:2px;cursor:pointer;width:100%;">OPEN + INJECTOR</button>
+            <button class="btn ghost" onclick="closeGameModal()" style="padding:10px;font-size:11px;width:100%;background:rgba(10,20,40,.8);border:1px solid var(--line2);border-radius:12px;color:var(--txt);font-weight:800;letter-spacing:2px;cursor:pointer;">CANCEL</button>
+    </div></div>
+
+    <!-- GAME VIEW -->
+    <div class="gv" id="game-view">
+        <button class="gv-exit" id="gv-exit" onclick="exitGame()"><i class="fa-solid fa-xmark"></i> CLOSE</button>
+        <iframe id="game-frame" allow="fullscreen" referrerpolicy="no-referrer"></iframe>
+    </div>
+
+    <!-- INJECTOR -->
+    <div class="inj" id="injector">
+        <div class="inj-head" id="inj-handle">
+            <div class="inj-title">
+                <div class="inj-logo"><img src="logo.png"></div>
+                <span>VIP-ANKIT</span>
+            </div>
+            <span class="inj-close" onclick="hideInj()">✕</span>
+        </div>
+        <div class="inj-body">
+            <div class="inj-row"><span class="inj-label">PERIOD</span><span class="inj-value period" id="inj-period">—</span></div>
+            <div class="inj-row"><span class="inj-label">PREDICTION</span><span class="inj-value pred" id="inj-pred">—</span></div>
+            <div class="inj-row"><span class="inj-label">TARGET NUM</span><span class="inj-value" id="inj-num" style="color:#88ccff;">—</span></div>
+            <div class="inj-actions">
+                <button class="inj-exit" onclick="exitGame()">EXIT</button>
+                <button class="inj-hide" onclick="hideInj()">HIDE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="inj-fab" id="inj-fab"><img src="logo.png"></div>
+    <div class="toast" id="toast"></div>
+    <div class="confetti" id="confetti"></div>
+    <div class="result-fs" id="result-fs">
+        <div class="rc" id="result-rc">
+            <span class="glow"></span><img id="fs-em" class="em" src="" alt="">
+            <h2 id="fs-title">WIN</h2>
+            <div class="rs" id="fs-sub">RESULT</div>
+            <div class="rn" id="fs-num">—</div>
+            <div class="rl">ACTUAL NUMBER</div>
+        </div>
+    </div>
+
+    <script>
+        let deviceId = localStorage.getItem('arosh_device_id');
+        if (!deviceId) {
+            deviceId = 'AK47-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+            localStorage.setItem('arosh_device_id', deviceId);
+        }
+
+        let mode = '30s', feed = [], lastPeriod = null, pending = null, currentResult = null, hist = [];
+        let lossStreak = 0, recoveryMode = false, overrideMode = 'original';
+        const HIGH_CONF = 0.72;
+        let gameSessionsData = { "30s": { nums: [] }, "1m": { nums: [] }, "3m": { nums: [] }, "5m": { nums: [] } };
+
+        const MODE_URLS = {
+            '30s': 'https://draw.ar-lottery01.com/WinGo/WinGo_30S/GetHistoryIssuePage.json',
+            '1m': 'https://draw.ar-lottery01.com/WinGo/WinGo_1M/GetHistoryIssuePage.json',
+            '3m': 'https://draw.ar-lottery01.com/WinGo/WinGo_3M/GetHistoryIssuePage.json',
+            '5m': 'https://draw.ar-lottery01.com/WinGo/WinGo_5M/GetHistoryIssuePage.json'
+        };
+        const MODE_SECONDS = { '30s': 30, '1m': 60, '3m': 180, '5m': 300 };
+
+        const BALL_IMAGES = {
+            0: 'https://i.postimg.cc/Wzrp0gRV/ball-0-053d2b99.png', 1: 'https://i.postimg.cc/Qt7ZzDfk/ball-1-12ea01b7.png',
+            2: 'https://i.postimg.cc/zvSZJjZy/ball-2-7d433738.png', 3: 'https://i.postimg.cc/7hyr8Rcv/ball-3-a91cceac.png',
+            4: 'https://i.postimg.cc/WbTc5Qgg/ball-4-cad06388.png', 5: 'https://i.postimg.cc/28GRM27J/ball-5-8e182f0c.png',
+            6: 'https://i.postimg.cc/c1QNMsgd/ball-6-44a39882.png', 7: 'https://i.postimg.cc/2S5RDhH5/ball-7-c8babe29.png',
+            8: 'https://i.postimg.cc/R03k39x5/ball-8-9d781b7c.png', 9: 'https://i.postimg.cc/cL5q4CjB/ball-9-19985870.png'
+        };
+
+        function getBallHTML(num) {
+            const img = BALL_IMAGES[num] || '';
+            if (!img) return `<span style="font-size:24px;font-weight:900;">${num}</span>`;
+            return `<span class="num-ball" style="background-image:url('${img}');"></span>`;
+        }
+
+        function toast(m) {
+            const t = document.getElementById('toast');
+            t.textContent = m; t.classList.add('show');
+            clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2000);
+        }
+
+        function goto(id) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+
+        function confetti() {
+            const c = document.getElementById('confetti'); c.innerHTML = '';
+            const colors = ['#22c55e', '#22c55e', '#16a34a', '#ffd166', '#00ffa3', '#b7f7c5'];
+            for (let i = 0; i < 60; i++) {
+                const p = document.createElement('div'); p.className = 'conf-p';
+                p.style.left = Math.random() * 100 + 'vw'; p.style.background = colors[i % colors.length];
+                p.style.animationDuration = (2 + Math.random() * 2) + 's'; p.style.animationDelay = (Math.random() * 0.5) + 's';
+                p.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)'; c.appendChild(p);
+            }
+            setTimeout(() => c.innerHTML = '', 4500);
+        }
+
+        // 🔐 KEY PROTECTION
+        const ACCESS_KEY = 'ANKIT098';
+
+        function checkAccess() {
+            const btn = document.getElementById('check-btn');
+            const msg = document.getElementById('login-msg');
+            const input = document.getElementById('login-key-input');
+            const enteredKey = input.value.trim();
+
+            if (!enteredKey) {
+                msg.textContent = '⚠ ENTER YOUR KEY';
+                msg.className = 'msg error';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'CHECKING...';
+
+            setTimeout(() => {
+                if (enteredKey === ACCESS_KEY) {
+                    msg.textContent = '✓ KEY VERIFIED';
+                    msg.className = 'msg success';
+                    localStorage.setItem('arosh_auth', '1');
+
+                    setTimeout(() => {
+                        goto('screen-congrats');
+                        confetti();
+                        setTimeout(enter, 1400);
+                    }, 400);
+                } else {
+                    msg.textContent = '✕ INVALID KEY';
+                    msg.className = 'msg error';
+                    btn.disabled = false;
+                    btn.textContent = 'LOGIN';
+                    input.value = '';
+                    input.focus();
+                }
+            }, 500);
+        }
+
+        function enter() {
+            goto('screen-main'); updateStats(); renderHist(); startEngine(); toast('⚡AI ENGINE ACTIVE');
+        }
+
+        document.getElementById('login-key-input')?.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') checkAccess();
+        });
+
+        function sideOf(d) { return d >= 5 ? 'BIG' : 'SMALL'; }
+        function colorOf(d) { return d % 2 === 0 ? 'RED' : 'GREEN'; }
+
+        function fibonacciWeightedPattern(H, track) {
+            const cls = track === 'BS' ? sideOf : colorOf;
+            const C = track === 'BS' ? ['BIG', 'SMALL'] : ['RED', 'GREEN'];
+            if (H.length < 3) return { pred: C[0], conf: 0.5 };
+            const fib = [1, 1, 2, 3, 5, 8, 13];
+            const n = Math.min(H.length - 1, 7);
+            const weights = fib.slice(0, n);
+            const totalWeight = weights.reduce((a, b) => a + b, 0);
+            const counts = { [C[0]]: 0, [C[1]]: 0 };
+            for (let i = 0; i < n; i++) {
+                const idx = H.length - 1 - i;
+                if (idx < 0) break;
+                const val = cls(H[idx]);
+                counts[val] += weights[i] || 0;
+            }
+            const p0 = counts[C[0]] / totalWeight;
+            const pred = p0 >= 0.5 ? C[0] : C[1];
+            const conf = Math.max(p0, 1 - p0);
+            return { pred, conf: 0.5 + (conf - 0.5) * 0.7 };
+        }
+
+        function entropyPatternDetection(H, track) {
+            const cls = track === 'BS' ? sideOf : colorOf;
+            const C = track === 'BS' ? ['BIG', 'SMALL'] : ['RED', 'GREEN'];
+            if (H.length < 5) return { pred: C[0], conf: 0.5 };
+            const window = Math.min(30, H.length);
+            const recent = H.slice(-window);
+            const classified = recent.map(cls);
+            const p1 = classified.filter(x => x === C[0]).length / classified.length;
+            const entropy = -p1 * Math.log2(p1 + 0.001) - (1 - p1) * Math.log2(1 - p1 + 0.001);
+            const maxEntropy = 1.0;
+            const entropyRatio = entropy / maxEntropy;
+            if (entropyRatio < 0.6) {
+                const last = cls(H[H.length - 1]);
+                return { pred: last, conf: 0.6 + (1 - entropyRatio) * 0.3 };
+            } else {
+                const last = cls(H[H.length - 1]);
+                const opposite = C.find(c => c !== last);
+                const conf = 0.55 + (entropyRatio - 0.6) * 0.35;
+                return { pred: opposite, conf: Math.min(conf, 0.85) };
+            }
+        }
+
+        function neuralPatternMatch(H, track) {
+            const cls = track === 'BS' ? sideOf : colorOf;
+            const C = track === 'BS' ? ['BIG', 'SMALL'] : ['RED', 'GREEN'];
+            if (H.length < 10) return { pred: C[0], conf: 0.5 };
+            const recent = H.slice(-8).map(cls);
+            const scores = { [C[0]]: 0, [C[1]]: 0 };
+            for (let windowSize = 3; windowSize <= 6; windowSize++) {
+                const pattern = recent.slice(-windowSize);
+                if (pattern.length < 2) continue;
+                for (let i = 0; i <= H.length - windowSize - 1; i++) {
+                    const match = H.slice(i, i + windowSize).map(cls);
+                    let isMatch = true;
+                    for (let j = 0; j < pattern.length; j++) {
+                        if (match[j] !== pattern[j]) { isMatch = false; break; }
+                    }
+                    if (isMatch) {
+                        const next = H[i + windowSize];
+                        const weight = (1 + (windowSize - 3) * 0.2) * (1 + (H.length - i) / H.length);
+                        scores[cls(next)] += weight;
+                    }
+                }
+            }
+            const total = scores[C[0]] + scores[C[1]];
+            if (total === 0) return { pred: cls(H[H.length - 1]), conf: 0.5 };
+            const p0 = scores[C[0]] / total;
+            const pred = p0 >= 0.5 ? C[0] : C[1];
+            const conf = Math.max(p0, 1 - p0);
+            return { pred, conf: 0.5 + (conf - 0.5) * 0.8 };
+        }
+
+        function variableOrderMarkov(H, track) {
+            const cls = track === 'BS' ? sideOf : colorOf;
+            const C = track === 'BS' ? ['BIG', 'SMALL'] : ['RED', 'GREEN'];
+            if (H.length < 3) return { pred: C[0], conf: 0.5 };
+            const scores = { [C[0]]: 0, [C[1]]: 0 };
+            const maxOrder = Math.min(5, H.length - 1);
+            for (let order = 1; order <= maxOrder; order++) {
+                const pattern = H.slice(-order).map(cls);
+                if (pattern.length < 1) continue;
+                let count = 0, nextCount = { [C[0]]: 0, [C[1]]: 0 };
+                for (let i = 0; i < H.length - order; i++) {
+                    const current = H.slice(i, i + order).map(cls);
+                    if (current.length === pattern.length && current.every((v, j) => v === pattern[j])) {
+                        const next = cls(H[i + order]);
+                        nextCount[next] = (nextCount[next] || 0) + 1;
+                        count++;
+                    }
+                }
+                if (count > 0) {
+                    const orderWeight = 1 + order * 0.2;
+                    const p0 = (nextCount[C[0]] || 0) / count;
+                    scores[C[0]] += p0 * orderWeight;
+                    scores[C[1]] += (1 - p0) * orderWeight;
+                }
+            }
+            const total = scores[C[0]] + scores[C[1]];
+            if (total === 0) return { pred: cls(H[H.length - 1]), conf: 0.5 };
+            const p0 = scores[C[0]] / total;
+            const pred = p0 >= 0.5 ? C[0] : C[1];
+            const conf = Math.max(p0, 1 - p0);
+            return { pred, conf: 0.5 + (conf - 0.5) * 0.75 };
+        }
+
+        function ensemblePrediction(H, track) {
+            const models = [fibonacciWeightedPattern, entropyPatternDetection, neuralPatternMatch, variableOrderMarkov];
+            const C = track === 'BS' ? ['BIG', 'SMALL'] : ['RED', 'GREEN'];
+            const votes = { [C[0]]: 0, [C[1]]: 0 };
+            const confidences = [];
+            models.forEach((model, idx) => {
+                const result = model(H, track);
+                const weight = 1 + (idx / models.length);
+                votes[result.pred] += result.conf * weight;
+                const other = C.find(c => c !== result.pred);
+                votes[other] += (1 - result.conf) * weight * 0.3;
+                confidences.push(result.conf);
+            });
+            const total = votes[C[0]] + votes[C[1]];
+            if (total === 0) return { pred: C[0], conf: 0.5 };
+            let p0 = votes[C[0]] / total;
+            let pred = p0 >= 0.5 ? C[0] : C[1];
+            let conf = Math.max(p0, 1 - p0);
+            if (overrideMode === 'opposite') {
+                const opposite = C.find(c => c !== pred);
+                pred = opposite;
+                conf = 1 - conf;
+                conf = Math.min(Math.max(conf, 0.45), 0.85);
+            }
+            const avgConf = confidences.reduce((a, b) => a + b, 0) / confidences.length;
+            const adjustedConf = 0.5 + (conf - 0.5) * 0.9;
+            const finalConf = Math.min(0.95, (avgConf + adjustedConf) / 2);
+            return { pred, conf: finalConf };
+        }
+
+        function predictTrack(H, track) { return ensemblePrediction(H, track); }
+
+        function pickBestDigit(H, pred, track) {
+            const range = track === 'BS' ? (pred === 'BIG' ? [5, 6, 7, 8, 9] : [0, 1, 2, 3, 4]) : (pred === 'RED' ? [0, 2, 4, 6, 8] : [1, 3, 5, 7, 9]);
+            const cls = track === 'BS' ? sideOf : colorOf;
+            const freq = {}; range.forEach(d => freq[d] = 0);
+            for (let k = 2; k <= 4; k++) {
+                if (H.length <= k) continue;
+                const tail = H.slice(-k).map(cls).join(',');
+                const w = Math.pow(1.7, k);
+                for (let i = 0; i < H.length - k; i++) {
+                    if (H.slice(i, i + k).map(cls).join(',') === tail) {
+                        const nd = H[i + k];
+                        if (freq[nd] !== undefined) freq[nd] += w;
+                    }
+                }
+            }
+            H.slice(-15).forEach(d => { if (freq[d] !== undefined) freq[d] += 0.6; });
+            const sorted = Object.entries(freq).sort((a, b) => b[1] - a[1]);
+            if (!sorted.length || sorted[0][1] === 0) {
+                if (track === 'BS') return pred === 'BIG' ? 7 : 2;
+                return pred === 'GREEN' ? 7 : 4;
+            }
+            return parseInt(sorted[0][0]);
+        }
+
+        function analyze(timeframe) {
+            const session = gameSessionsData[timeframe];
+            if (!session || session.nums.length < 6) {
+                updateStrategyRack(null);
+                return { track: 'BS', prediction: 'BIG', number: 7, confidence: 0.5, mode: 'WARMUP', model: 'INITIALIZING' };
+            }
+            const H = session.nums;
+            const bsResult = predictTrack(H, 'BS');
+            const rgResult = predictTrack(H, 'RG');
+            const winner = bsResult.conf >= rgResult.conf ? { ...bsResult, track: 'BS' } : { ...rgResult, track: 'RG' };
+            const num = pickBestDigit(H, winner.pred, winner.track);
+            const conf = winner.conf;
+            const modeLbl = recoveryMode ? 'RECOVERY-' + winner.track : 'LOCK-' + winner.track;
+            const safety = document.getElementById('safety-status');
+            const overrideLabel = overrideMode === 'opposite' ? ' [OPPOSITE MODE]' : '';
+            if (recoveryMode) {
+                safety.className = 'v2-status warn';
+                safety.textContent = '⚠ RECOVERY LOCK · ' + winner.track + overrideLabel + ' · ' + Math.round(conf * 100) + '%';
+            } else if (conf >= HIGH_CONF) {
+                safety.className = 'v2-status good';
+                safety.textContent = '✓ HIGH CONFIDENCE · ' + winner.track + overrideLabel + ' · ' + Math.round(conf * 100) + '%';
+            } else {
+                safety.className = 'v2-status warn';
+                safety.textContent = '◈ ACTIVE PICK · ' + winner.track + overrideLabel + ' · ' + Math.round(conf * 100) + '%';
+            }
+            updateStrategyRack({ track: winner.track, bsPred: bsResult.pred, bsConf: bsResult.conf, rgPred: rgResult.pred, rgConf: rgResult.conf, pred: winner.pred });
+            return { track: winner.track, prediction: winner.pred, number: num, confidence: conf, mode: modeLbl, model: 'QUANTUM NEURAL v3', override: overrideMode };
+        }
+
+        function updateStrategyRack(best) {
+            if (!best) {
+                ['fibonacci', 'entropy', 'neural', 'markov'].forEach(m => {
+                    const v = document.getElementById('pod-' + m + '-v'); if (v) v.textContent = '—';
+                    const s = document.getElementById('pod-' + m + '-s'); if (s) s.textContent = '—';
+                    const pod = document.getElementById('pod-' + m); if (pod) pod.classList.remove('active');
+                });
+                ['bs-signal', 'rg-signal'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.remove('winner'); });
+                ['bs-value', 'rg-value', 'bs-conf', 'rg-conf'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = '—'; });
+                return;
+            }
+            ['BS', 'RG'].forEach(tr => {
+                const pred = tr === 'BS' ? best.bsPred : best.rgPred;
+                const conf = tr === 'BS' ? best.bsConf : best.rgConf;
+                const vEl = document.getElementById(tr.toLowerCase() + '-value');
+                const cEl = document.getElementById(tr.toLowerCase() + '-conf');
+                if (vEl) { vEl.textContent = pred || '—'; vEl.className = 'v2-trk-v ' + classOf(pred); }
+                if (cEl) cEl.textContent = 'ENSEMBLE · ' + Math.round((conf || 0) * 100) + '%';
+                const sig = document.getElementById(tr.toLowerCase() + '-signal');
+                if (sig) sig.classList.toggle('winner', tr === best.track);
+            });
+        }
+
+        function classOf(p) {
+            if (p === 'BIG') return 'big'; if (p === 'SMALL') return 'small';
+            if (p === 'GREEN') return 'green'; if (p === 'RED') return 'red'; return 'idle';
+        }
+
+        function setOverrideMode(mode) {
+            overrideMode = mode;
+            document.getElementById('btn-original').classList.toggle('active', mode === 'original');
+            document.getElementById('btn-opposite').classList.toggle('active', mode === 'opposite');
+            const modeName = mode === 'original' ? '🐉 VIP-ANKIT' : '🔄 OPPOSITE MODE';
+            toast(modeName);
+            if (lastPeriod && feed.length > 0) {
+                const H = gameSessionsData[mode]?.nums || [];
+                if (H.length >= 6) {
+                    const result = analyze(mode); currentResult = result;
+                    pending = { period: lastPeriod, track: result.track, pred: result.prediction, num: result.number, conf: result.confidence, checked: false, mode: result.mode };
+                    renderPred(result); updateInj();
+                }
+            }
+        }
+
+        function setMode(m) {
+            mode = m;
+            document.querySelectorAll('.mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === m));
+            feed = []; lastPeriod = null; pending = null; lossStreak = 0; recoveryMode = false;
+            gameSessionsData[m] = { nums: [] };
+            fetchFeed();
+        }
+
+        async function fetchFeed() {
+            try {
+                const url = MODE_URLS[mode]; if (!url) return;
+                let data;
+                try { const r = await fetch(url + '?t=' + Date.now()); data = await r.json(); } catch (e) {
+                    const r = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(url)); data = await r.json();
+                }
+                if (!data || !data.data || !data.data.list) return;
+                feed = data.data.list;
+                const vals = feed.map(x => parseInt(x.number)).reverse();
+                const latest = String(feed[0].issueNumber);
+                const nextPeriod = (BigInt(latest) + 1n).toString();
+                document.getElementById('curr-period').textContent = nextPeriod.slice(-8);
+                gameSessionsData[mode].nums = vals.slice(-5000);
+                if (pending && !pending.checked && lastPeriod && lastPeriod !== nextPeriod) {
+                    const match = feed.find(it => String(it.issueNumber) === String(pending.period));
+                    if (match) {
+                        let an = parseInt(match.number), abs = an >= 5 ? 'BIG' : 'SMALL', acol = an % 2 === 0 ? 'RED' : 'GREEN';
+                        const shownPred = pending.pred, shownNum = pending.num;
+                        let hit = pending.track === 'BS' ? shownPred === abs : shownPred === acol;
+                        let numWin = shownNum === an;
+                        window.__gmWinStreak = hit ? ((window.__gmWinStreak || 0) + 1) : 0;
+                        try {
+                            const sEl = document.getElementById('gm-streak'); if (sEl) sEl.textContent = window.__gmWinStreak || 0;
+                            const recent = hist.slice(0, 19); const wc = recent.filter(x => x.hit).length + (hit ? 1 : 0);
+                            const total = Math.min(20, recent.length + 1); const hr = document.getElementById('gm-hitrate');
+                            if (hr) hr.textContent = Math.round(wc / total * 100) + '%';
+                            const lg = document.getElementById('gm-last');
+                            if (lg) {
+                                if (numWin) { lg.style.color = '#fde68a'; lg.textContent = '◆ JACKPOT · ' + pending.pred + ' · #' + an; }
+                                else if (hit) { lg.style.color = '#a7f3d0'; lg.textContent = '✓ WIN · ' + pending.pred + ' · #' + an; }
+                                else { lg.style.color = '#fca5a5'; lg.textContent = '✗ LOSS · pred ' + pending.pred + ' vs #' + an; }
+                            }
+                        } catch (_) {}
+                        if (!hit) { lossStreak++; recoveryMode = true; } else { lossStreak = 0; recoveryMode = false; }
+                        hist.unshift({ per: pending.period, tr: pending.track, pr: pending.pred, pn: pending.num, an, abs, ac: acol, hit, nw: numWin, t: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }), mode: pending.mode || '—' });
+                        if (hist.length > 200) hist.length = 200;
+                        pending.checked = true;
+                        showResultAnim(numWin ? 'JACKPOT' : hit ? 'WIN' : 'LOSS', an);
+                        updateStats(); renderHist();
+                    }
+                }
+                if (nextPeriod !== lastPeriod && vals.length >= 5) {
+                    lastPeriod = nextPeriod;
+                    const result = analyze(mode); currentResult = result;
+                    pending = { period: lastPeriod, track: result.track, pred: result.prediction, num: result.number, conf: result.confidence, checked: false, mode: result.mode };
+                    renderPred(result); updateInj();
+                }
+                renderTape(feed);
+                document.getElementById('tape-meta').textContent = feed.length + ' RESULTS';
+            } catch (e) { console.warn(e); }
+        }
+
+        function showResultAnim(kind, actual) {
+            const fs = document.getElementById('result-fs'), rc = document.getElementById('result-rc');
+            const em = document.getElementById('fs-em'), t = document.getElementById('fs-title'), sub = document.getElementById('fs-sub'), n = document.getElementById('fs-num');
+            const N = 'https://fonts.gstatic.com/s/e/notoemoji/latest/';
+            n.innerHTML = getBallHTML(actual);
+            if (kind === 'JACKPOT') { em.src = N + '1f3b0/512.gif'; t.textContent = 'JACKPOT'; sub.textContent = 'EXACT NUMBER MATCH'; rc.style.setProperty('--_c', '#eab308'); rc.style.setProperty('--_g', 'linear-gradient(90deg,#f59e0b,#e67e00,#f0c040)'); confetti(); }
+            else if (kind === 'WIN') { em.src = N + '1f3c6/512.gif'; t.textContent = 'WIN'; sub.textContent = 'PREDICTION SUCCESSFUL'; rc.style.setProperty('--_c', '#10b981'); rc.style.setProperty('--_g', 'linear-gradient(90deg,#10b981,#059669)'); }
+            else { em.src = N + '1f4a5/512.gif'; t.textContent = 'LOSS'; sub.textContent = 'RECOVERY MODE ARMED'; rc.style.setProperty('--_c', '#ef4444'); rc.style.setProperty('--_g', 'linear-gradient(90deg,#ef4444,#991b1b)'); }
+            fs.classList.add('show'); clearTimeout(fs._h); fs._h = setTimeout(() => fs.classList.remove('show'), 2400);
+        }
+        document.addEventListener('click', e => { const fs = document.getElementById('result-fs'); if (fs && fs.classList.contains('show') && (e.target === fs)) fs.classList.remove('show'); });
+
+        function renderPred(r) {
+            const bs = document.getElementById('pred-bs'), card = document.getElementById('pred-card'), num = document.getElementById('pred-num');
+            const badge = document.getElementById('track-badge'), label = document.getElementById('pred-label'), modelEl = document.getElementById('model-badge');
+            const cls = r.prediction === 'BIG' ? 'big' : r.prediction === 'SMALL' ? 'small' : r.prediction === 'GREEN' ? 'green' : r.prediction === 'RED' ? 'red' : 'idle';
+            bs.className = 'v2-pick ' + cls; bs.textContent = r.prediction;
+            card.className = 'v2-verdict ' + cls + (r.mode && r.mode.includes('RECOVERY') ? ' recovery' : '');
+            const recov = r.mode && r.mode.includes('RECOVERY');
+            badge.className = 'v2-track ' + (recov ? 'v2-track-recov' : (r.track === 'BS' ? 'v2-track-bs' : 'v2-track-rg'));
+            badge.textContent = (recov ? '⟳ ' : '') + (r.track === 'BS' ? 'B / S TRACK' : 'R / G TRACK') + (r.override === 'opposite' ? ' [OPP]' : '');
+            modelEl.textContent = r.model || '—'; label.textContent = 'PREDICTION'; num.innerHTML = getBallHTML(r.number);
+            const pct = Math.round((r.confidence || 0) * 100);
+            document.getElementById('conf-fill').style.width = pct + '%';
+            document.getElementById('conf-text').textContent = pct + '%';
+        }
+
+        function renderTape(feedData) {
+            document.getElementById('live-tape').innerHTML = feedData.slice(0, 20).map(item => {
+                const n = parseInt(item.number);
+                return `<div class="tcell ${n >= 5 ? 'big' : 'small'}">${getBallHTML(n)}</div>`;
+            }).join('');
+        }
+
+        function updateStats() {
+            const w = hist.filter(h => h.hit).length, j = hist.filter(h => h.nw).length, t = hist.length;
+            document.getElementById('qs-win').textContent = w; document.getElementById('qs-loss').textContent = t - w;
+            document.getElementById('qs-jack').textContent = j; document.getElementById('qs-acc').textContent = t ? Math.round(w / t * 100) + '%' : '0%';
+        }
+
+        function renderHist() {
+            const list = document.getElementById('hist-list'), stats = document.getElementById('hist-stats');
+            const w = hist.filter(h => h.hit).length, j = hist.filter(h => h.nw).length, t = hist.length;
+            stats.textContent = t + ' PLAYED · ' + w + ' WINS · ' + j + ' 🎰';
+            if (!hist.length) { list.innerHTML = '<div style="text-align:center;padding:20px;color:var(--txt3);font-family:var(--mono);font-size:10px">NO HISTORY YET</div>'; return; }
+            list.innerHTML = hist.slice(0, 50).map(h => {
+                const cls = h.nw ? 'jackpot' : (h.hit ? 'win' : 'loss');
+                const txt = h.nw ? 'JACKPOT' : (h.hit ? 'WIN' : 'LOSS');
+                const prCls = h.pr === 'BIG' ? 'big' : (h.pr === 'SMALL' ? 'small' : (h.pr === 'GREEN' ? 'green' : 'red'));
+                return `<div class="hrow"><div class="hp">${String(h.per).slice(-8)}<br>${h.t} · ${h.mode || h.tr || '—'}</div><div class="hpred ${prCls}">${h.pr || '—'}<br><span style="font-size:7px;color:var(--gold)">🎯${h.pn}</span></div><div class="hact">${getBallHTML(h.an)}</div><div class="hres ${cls}">${txt}</div></div>`;
+            }).join('');
+        }
+
+        function tickTimer() {
+            const el = document.getElementById('timer-val'); if (!el) return;
+            const p = MODE_SECONDS[mode] || 60;
+            const elapsed = (new Date().getUTCSeconds() + new Date().getUTCMilliseconds() / 1000) % p;
+            const left = p - elapsed;
+            el.textContent = `${String(Math.floor(left / 60)).padStart(2, '0')}:${String(Math.floor(left % 60)).padStart(2, '0')}`;
+            const ring = document.getElementById('ring-fg');
+            if (ring) { const pct = left / p; ring.style.strokeDashoffset = (1000 * (1 - pct)).toFixed(1); }
+        }
+
+        const games = [
+            { name: 'B MUMBAI', img: 'https://iili.io/BbtJ8Pe.webp', url: 'https://www.bigmumbail.com/#/register?invitationCode=148843082811' },
+            { name: 'TIRANGA', img: 'https://iili.io/BbtJtiF.jpg', url: 'https://tgdream20.com/#/register?invitationCode=421417203603' },
+            { name: 'DAMAN', img: 'https://iili.io/BbtdAW7.jpg', url: 'https://www.damanclub.me/#/register?invitationCode=757789507123' },
+            { name: 'GOA', img: 'https://iili.io/Bbt2qhB.jpg', url: 'http://www.goaok.org/#/register?invitationCode=643449269569' }
+        ];
+        let pickedGame = null;
+
+        function renderGames() {
+            const grads = ['linear-gradient(135deg,#16a34a,#0099ff)', 'linear-gradient(135deg,#0ea5e9,#7c3aed)', 'linear-gradient(135deg,#f59e0b,#e67e00)', 'linear-gradient(135deg,#10b981,#0ea5e9)', 'linear-gradient(135deg,#15803d,#22c55e)', 'linear-gradient(135deg,#22c55e,#22c55e)', 'linear-gradient(135deg,#8b5cf6,#22d3ee)', 'linear-gradient(135deg,#22c55e,#eab308)'];
+            const tags = ['HOT', 'NEW', 'TOP', 'LIVE', 'VIP', 'HOT', 'PRO', 'NEW', 'TOP', 'HOT', 'VIP', 'LIVE', 'PRO', 'NEW', 'TOP', 'HOT', 'LIVE', 'VIP', 'NEW', 'PRO'];
+            document.getElementById('games-grid').innerHTML = games.map((g, i) => {
+                const grad = grads[i % grads.length]; const initials = g.name.replace(/[^A-Z0-9]/gi, '').slice(0, 2).toUpperCase() || 'G'; const tag = tags[i] || 'HOT';
+                return `<div class="game gv15" onclick="openGM(${i})"><div class="g-tag">${tag}</div><div class="g-thumb" style="background:${grad}"><span class="g-initials">${initials}</span><img src="${g.img}" alt="${g.name}" loading="lazy" onload="this.classList.add('ok')" onerror="this.remove()"></div><div class="gname">${g.name}</div><div class="glaunch"><i class="fa-solid fa-play"></i> LAUNCH</div></div>`;
+            }).join('');
+        }
+
+        function openGM(i) {
+            pickedGame = games[i]; document.getElementById('gm-img').src = pickedGame.img; document.getElementById('gm-name').textContent = pickedGame.name;
+            if (currentResult) { const c = currentResult.prediction; document.getElementById('gm-bs').textContent = c; document.getElementById('gm-bs').style.color = c === 'BIG' ? 'var(--green)' : c === 'SMALL' ? 'var(--red)' : c === 'GREEN' ? '#00e676' : '#ff1744'; document.getElementById('gm-num').innerHTML = getBallHTML(currentResult.number); }
+            document.getElementById('game-modal').classList.add('show');
+        }
+        function closeGameModal() { document.getElementById('game-modal').classList.remove('show'); }
+
+        function launchGame(inj) {
+            if (!pickedGame) return; const frame = document.getElementById('game-frame'); frame.src = pickedGame.url;
+            document.getElementById('game-view').classList.add('show'); document.getElementById('gv-exit').classList.add('show'); closeGameModal();
+            if (inj) { showInj(); toast('INJECTOR ACTIVE'); }
+        }
+
+        function exitGame() { document.getElementById('game-view').classList.remove('show'); document.getElementById('gv-exit').classList.remove('show'); document.getElementById('game-frame').src = 'about:blank'; hideInj(); hideFab(); }
+        function showInj() { const el = document.getElementById('injector'); const fab = document.getElementById('inj-fab'); el.classList.add('show'); fab.classList.remove('show'); if (!el.style.left || el.style.left === '') { el.style.left = Math.min(window.innerWidth - 220, 16) + 'px'; el.style.top = Math.min(window.innerHeight - 250, 60) + 'px'; } updateInj(); }
+        function hideInj() { const el = document.getElementById('injector'); el.classList.remove('show'); if (document.getElementById('game-view').classList.contains('show')) { const fab = document.getElementById('inj-fab'); fab.classList.add('show'); if (!fab.style.left || fab.style.left === '') { fab.style.left = Math.min(window.innerWidth - 60, 20) + 'px'; fab.style.top = Math.min(window.innerHeight - 80, 60) + 'px'; } } }
+        function hideFab() { document.getElementById('inj-fab').classList.remove('show'); }
+        function updateInj() { if (!currentResult) return; document.getElementById('inj-period').textContent = lastPeriod ? lastPeriod.slice(-8) : '—'; document.getElementById('inj-pred').textContent = currentResult.prediction; document.getElementById('inj-num').innerHTML = getBallHTML(currentResult.number); }
+
+        (function() {
+            const el = document.getElementById('injector'); let d = false, sx = 0, sy = 0, ox = 0, oy = 0; const handle = document.getElementById('inj-handle');
+            function S(x, y) { d = true; sx = x; sy = y; const r = el.getBoundingClientRect(); ox = r.left; oy = r.top; }
+            function M(x, y) { if (!d) return; el.style.left = Math.max(4, Math.min(window.innerWidth - el.offsetWidth - 4, ox + (x - sx))) + 'px'; el.style.top = Math.max(4, Math.min(window.innerHeight - el.offsetHeight - 4, oy + (y - sy))) + 'px'; }
+            function E() { d = false; }
+            handle.addEventListener('mousedown', e => { S(e.clientX, e.clientY); e.preventDefault(); });
+            window.addEventListener('mousemove', e => M(e.clientX, e.clientY)); window.addEventListener('mouseup', E);
+            handle.addEventListener('touchstart', e => { S(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true });
+            window.addEventListener('touchmove', e => { M(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true }); window.addEventListener('touchend', E);
+            const fab = document.getElementById('inj-fab'); let fabD = false, fabSx = 0, fabSy = 0, fabOx = 0, fabOy = 0;
+            function fabS(x, y) { fabD = true; fabSx = x; fabSy = y; const r = fab.getBoundingClientRect(); fabOx = r.left; fabOy = r.top; }
+            function fabM(x, y) { if (!fabD) return; fab.style.left = Math.max(4, Math.min(window.innerWidth - 56, fabOx + (x - fabSx))) + 'px'; fab.style.top = Math.max(4, Math.min(window.innerHeight - 56, fabOy + (y - fabSy))) + 'px'; }
+            function fabE() { fabD = false; }
+            fab.addEventListener('mousedown', e => { fabS(e.clientX, e.clientY); e.preventDefault(); });
+            window.addEventListener('mousemove', e => fabM(e.clientX, e.clientY)); window.addEventListener('mouseup', fabE);
+            fab.addEventListener('touchstart', e => { fabS(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true });
+            window.addEventListener('touchmove', e => { fabM(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true }); window.addEventListener('touchend', fabE);
+            fab.addEventListener('click', (e) => { if (Math.abs(e.clientX - fabSx) < 10 && Math.abs(e.clientY - fabSy) < 10) { showInj(); } });
+        })();
+
+        document.querySelectorAll('.tab').forEach(t => {
+            t.onclick = () => {
+                document.querySelectorAll('.tab').forEach(x => x.classList.remove('active')); document.querySelectorAll('.page').forEach(x => x.classList.remove('active'));
+                t.classList.add('active'); document.getElementById('page-' + t.dataset.tab).classList.add('active');
+                if (t.dataset.tab === 'games') renderGames(); if (t.dataset.tab === 'history') renderHist(); if (t.dataset.tab === 'predict') { fetchFeed(); }
+            };
+        });
+
+        let feedTimer, secTimer;
+        function startEngine() { fetchFeed(); if (feedTimer) clearInterval(feedTimer); feedTimer = setInterval(fetchFeed, 2500); if (secTimer) clearInterval(secTimer); secTimer = setInterval(tickTimer, 500); updateStats(); }
+
+        window.addEventListener('load', () => {
+            document.getElementById('login-key-input').value = '';
+            localStorage.removeItem('arosh_auth');
+            document.getElementById('btn-original').classList.add('active');
+        });
+
+        (function() {
+            function paintBurst(el) {
+                let b = el.querySelector('.ra-burst'); if (!b) { b = document.createElement('div'); b.className = 'ra-burst'; el.appendChild(b); }
+                b.innerHTML = ''; const n = 14; for (let i = 0; i < n; i++) { const p = document.createElement('i'); const a = (i / n) * Math.PI * 2; const r = 70 + Math.random() * 60; p.style.setProperty('--x', (Math.cos(a) * r) + 'px'); p.style.setProperty('--y', (Math.sin(a) * r) + 'px'); p.style.animationDelay = (Math.random() * 0.15) + 's'; b.appendChild(p); }
+            }
+            const mo = new MutationObserver(muts => { muts.forEach(m => { if (m.type === 'attributes' && m.attributeName === 'class') { const t = m.target; if (t.classList && t.classList.contains('result-anim') && t.classList.contains('show')) { paintBurst(t); if (navigator.vibrate) { try { navigator.vibrate(t.classList.contains('ra-loss') ? [30, 50, 30] : [50, 30, 100]); } catch (_) {} } } } }); });
+            document.querySelectorAll('.result-anim').forEach(el => mo.observe(el, { attributes: true }));
+            new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1) { n.querySelectorAll && n.querySelectorAll('.result-anim').forEach(el => mo.observe(el, { attributes: true })); } }))).observe(document.body, { childList: true, subtree: true });
+        })();
+
+        const MODELS = [{ key: 'fibonacci', name: 'FIBONACCI WEIGHTED' }, { key: 'entropy', name: 'ENTROPY DETECT' }, { key: 'neural', name: 'NEURAL MATCH' }, { key: 'markov', name: 'VAR ORDER MARKOV' }];
+        if (!document.querySelector('.v2-pods').children.length) { MODELS.forEach(m => { const pod = document.createElement('div'); pod.className = 'v2-pod'; pod.id = 'pod-' + m.key; pod.innerHTML = `<div class="v2-pod-n">${m.name}</div><div class="v2-pod-v" id="pod-${m.key}-v">—</div><div class="v2-pod-s" id="pod-${m.key}-s">—</div>`; document.querySelector('.v2-pods').appendChild(pod); }); }
+        if (!document.querySelector('.v2-tracks')) { const signalContainer = document.createElement('div'); signalContainer.className = 'v2-tracks'; signalContainer.innerHTML = `<div class="v2-trk" id="bs-signal"><div class="v2-trk-l">B / S</div><div class="v2-trk-v" id="bs-value">—</div><div class="v2-trk-c" id="bs-conf">—</div></div><div class="v2-trk" id="rg-signal"><div class="v2-trk-l">R / G</div><div class="v2-trk-v" id="rg-value">—</div><div class="v2-trk-c" id="rg-conf">—</div></div>`; const rack = document.querySelector('.v2-rack'); if (rack) rack.appendChild(signalContainer); }
+    </script>
+</body>
+</html>
